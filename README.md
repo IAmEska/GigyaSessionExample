@@ -1,14 +1,14 @@
 # GigyaSessionExample
 Gigya Android SDK invalid session issue example.
 
-1. Insert Gigya api key to AndroidManifest.xml
-```xml 
+1. Insert Gigya api key to **AndroidManifest.xml**
+```xml
 <meta-data
   android:name="apiKey"
   android:value="{InsertApiKey}" />
   ```
 2. Start application on Android emulator and login via email / username + password
-3. Put breakpoint on sessionLifecycleReciever *onReceive* method.
+3. Put breakpoint on sessionLifecycleReciever **onReceive** method.
 ```kotlin
 private val sessionLifecycleReceiver: BroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
